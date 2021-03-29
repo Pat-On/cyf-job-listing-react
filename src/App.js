@@ -8,7 +8,7 @@ import JobPostElement from "./JobPostElement";
 import data from "./data";
 
 function App() {
-  const [dataFull, dataFullHandler] = useState(data);
+  const dataFull = data;
   const [searchQueryResult, searchQueryResultHandler] = useState(dataFull);
   const [queryArray, queryArrayHandler] = useState([]);
 
