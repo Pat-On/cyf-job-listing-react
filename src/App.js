@@ -47,6 +47,7 @@ function App() {
       results = results.filter((jobOffer) => {
         if (jobOffer.languages.includes(item)) return true;
         if (jobOffer.tools.includes(item)) return true;
+        return null; // to quite the warning
       });
 
       // switch (item) {
