@@ -6,7 +6,6 @@ import JobPostElement from "./JobPostElement";
 
 // DATA
 import data from "./data";
-console.log(data);
 
 function App() {
   return (

@@ -34,9 +34,29 @@ const JobPostElement = (props) => {
                 </div>
               ) : null}
               <h3>{item.position}</h3>
-              <p>{item.postedAt}</p>
-              <p>{item.contract}</p>
-              <p>{item.location}</p>
+              <p
+                style={{
+                  display: "inline",
+                }}
+              >
+                {item.postedAt}
+              </p>
+              <p
+                style={{
+                  display: "inline",
+                  marginLeft: "2%",
+                }}
+              >
+                {item.contract}
+              </p>
+              <p
+                style={{
+                  display: "inline",
+                  marginLeft: "2%",
+                }}
+              >
+                {item.location}
+              </p>
             </div>
             <div className="techStackInfo">
               <button className="programmingLanguage">{item.role}</button>

@@ -18,10 +18,12 @@ align-items: center;
 }
 
 .jobOffert {
+  border: 1px solid black;
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
  justify-content: space-evenly;
+ margin: 2%;
 }
 
 
@@ -41,4 +43,6 @@ margin: 3%;
 padding: 4px;
 background-color: lightgreen;
 }
-
+h2{
+  color: #66A1A1;
+}
