@@ -2,7 +2,7 @@ import React from "react";
 
 const JobPostElement = (props) => {
   return (
-    <div>
+    <div style={{ marginTop: "90px" }}>
       {props.arrayOfJobs.map((item) => {
         return (
           <div key={item.id} className="jobOffert">

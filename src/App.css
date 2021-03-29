@@ -46,3 +46,7 @@ background-color: lightgreen;
 h2{
   color: #66A1A1;
 }
+
+.displayNone {
+  display: none;
+}
