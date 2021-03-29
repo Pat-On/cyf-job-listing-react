@@ -71,8 +71,6 @@ function App() {
     searchQueryResultHandler(results);
   };
 
-  console.log(queryArray.length);
-
   return (
     <div className="App">
       <div
