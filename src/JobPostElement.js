@@ -10,13 +10,37 @@ const JobPostElement = (props) => {
               <img src={item.logo} alt="Logo" />
             </div>
             <div className="aboutOffert">
-              <h2>{item.company}</h2>
+              <h2 style={{ display: "inline" }}>{item.company}</h2>
+              {item.new ? (
+                <div
+                  style={{
+                    display: "inline",
+                    marginLeft: "2%",
+                    backgroundColor: "red",
+                  }}
+                >
+                  NEW
+                </div>
+              ) : null}
+              {item.featured ? (
+                <div
+                  style={{
+                    display: "inline",
+                    marginLeft: "2%",
+                    backgroundColor: "grey",
+                  }}
+                >
+                  FEATURED
+                </div>
+              ) : null}
               <h3>{item.position}</h3>
               <p>{item.postedAt}</p>
               <p>{item.contract}</p>
               <p>{item.location}</p>
             </div>
             <div className="techStackInfo">
+              <button className="programmingLanguage">{item.role}</button>
+              <button className="programmingLanguage">{item.level}</button>
               {item.languages.map((languages) => {
                 return (
                   <button
