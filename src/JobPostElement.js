@@ -59,15 +59,37 @@ const JobPostElement = (props) => {
               </p>
             </div>
             <div className="techStackInfo">
-              <button className="programmingLanguage">{item.role}</button>
-              <button className="programmingLanguage">{item.level}</button>
-              {item.languages.map((languages) => {
+              <button
+                onClick={(e) => props.activeSearcher(e, item.role)}
+                className="programmingLanguage"
+              >
+                {item.role}
+              </button>
+              <button
+                onClick={(e) => props.activeSearcher(e, item.level)}
+                className="programmingLanguage"
+              >
+                {item.level}
+              </button>
+              {item.languages.map((language) => {
                 return (
                   <button
+                    onClick={(e) => props.activeSearcher(e, language)}
                     className="programmingLanguage"
-                    key={item.id + "_" + languages}
+                    key={item.id + "_" + language}
                   >
-                    {languages}
+                    {language}
+                  </button>
+                );
+              })}
+              {item.tools.map((tool) => {
+                return (
+                  <button
+                    onClick={(e) => props.activeSearcher(e, tool)}
+                    className="programmingLanguage"
+                    key={item.id + "_" + tool}
+                  >
+                    {tool}
                   </button>
                 );
               })}
